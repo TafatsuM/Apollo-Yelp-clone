@@ -1,8 +1,4 @@
-require('dotenv').config();
-
-//const apiKey ="h4Wlcne7eV9gHRIMaUBpOO8EhD9yOfJJxJ4t7bFrK2qtA-sxqiB9DwayY0GIj-_Kv-EkpAAZrFTDZ5jyvh46ta4hTFpbRKngPkopE6a0K7CmgNi9Vs5xObf7opeAYHYx";
-const apiKey = process.env.APIKEY;
-console.log(apiKey)
+const apiKey = process.env.REACT_APP_APIKEY;
 const Yelp = {
   async search(term, location, sortBy) {
     const response = await fetch(
