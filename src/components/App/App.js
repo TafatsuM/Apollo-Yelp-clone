@@ -14,7 +14,7 @@ class App extends React.Component {
   }
 
   searchYelp(term, location, sortBy) {
-    console.log(`Searching Yelp with ${term}, ${location}, ${sortBy}`);
+    console.log(`You are searching Yelp API for "${term}" 😋, at ${location}, with the "${sortBy}" sort by option...`);
     Yelp.search(term, location, sortBy).then((businesses) => {
       this.setState({ businesses: businesses });
     });

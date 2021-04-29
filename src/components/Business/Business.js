@@ -5,7 +5,7 @@ class Business extends React.Component {
 
 business = this.props.business;
 render () {
-  console.log(this.business)
+  //console.log(this.business)
   return (
     <div className="Business">
       <div className="image-container">
